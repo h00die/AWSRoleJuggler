@@ -57,7 +57,7 @@ def juggleRoles(roleList):
                 print(f"[i] {i}/{len(roleList)} Attempting to assume role ARN: {role}")
                 client = assumeRole(client, role)
             print("[*] Sleeping for 15 minutes and then refreshing session.")
-            time.sleep(30)
+            time.sleep(540)
 
     except KeyboardInterrupt:
         return
